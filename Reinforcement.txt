@@ -1,0 +1,25 @@
+/*
+R-1.1: Invalid Name
+I_Have_A_Dollar_$ign
+C++ does not allow the $ character in names.
+
+R-1.4: String Contents
+The contents of string s will be abcabcdabc.
+
+R-1.5: Operator Precedence
+((y + (2 * (z++))) < (3 - (w / 5)))
+*/
+
+// R-1.7: Sum function
+long sumSmallerThan(int n)
+{
+    long sum = 0;
+    for (int i = 0; i < n; ++i) sum += i;
+    return sum;
+}
+
+// R-1.8: isMultiple Function
+bool isMultiple(long n, long m)
+{
+    return (m != 0) && (n % m == 0);
+}
